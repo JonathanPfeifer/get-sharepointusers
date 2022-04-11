@@ -37,7 +37,7 @@ function Get-SharePointUsers {
             }
         }
 
-        $results += $user
+        $results.Add($user)
     }
 
     $results | Export-Csv $_outfile -NoTypeInformation
